@@ -49,7 +49,7 @@ router.put('/:id', (req, res) => {
       todo.isDone = isDone === 'on'
       return todo.save()
     })
-    .then(() => res.redirect(`/todos/${id}`))
+    .then(() => res.redirect(`/`))
     .catch(error => console.log(error))
 })
 
